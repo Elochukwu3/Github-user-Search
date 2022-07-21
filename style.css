@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  background-color: #235772;
+  height: 100vh;
+  padding: 10px;
+}
+span {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 7px 0;
+}
+h2 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.img-container {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  background-color: black;
+  border: 3px solid white;
+}
+.bio {
+  width: 250px;
+  padding: auto;
+  line-height: 1.1em;
+}
+.login {
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.image-holder {
+  display: flex;
+  justify-content: center;
+  /* margin: 10px 0; */
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.input-cont {
+  display: flex;
+  width: 230px;
+  height: 5vh;
+  position: relative;
+  padding: 0 3px;
+}
+.close {
+  font-size: 1.8em;
+  font-weight: 900;
+  position: absolute;
+  right: 25%;
+  top: 10%;
+  color: gray;
+  cursor: pointer;
+}
+.input-search {
+  font-size: 1.3em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  outline: none;
+}
+.btn {
+  background-color: #2324;
+  border: unset;
+  cursor: pointer;
+}
+.image-cont {
+  width: 100px;
+  height: 100px;
+  background-color: #232322;
+}
+.img-prof {
+  background-color: silver;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.text {
+  padding: 0;
+  margin: auto;
+}
+.text :nth-child(1) {
+  width: 200px;
+  background-color: silver;
+  border-radius: 4px;
+  animation: opa 2s ease infinite;
+}
+.text :nth-child(2) {
+  width: 200px;
+  background-color: silver;
+  border-radius: 3px;
+  animation: opa 2s ease infinite;
+  animation-delay: 0.1s;
+}
+.text :nth-child(3) {
+  width: 140px;
+  background-color: silver;
+  border-radius: 3px;
+  animation: opa 2s ease infinite;
+  animation-delay: 0.2s;
+}
+.text :nth-child(4) {
+  width: 100px;
+  background-color: silver;
+  border-radius: 4px;
+  animation: opa 2s ease infinite;
+  animation-delay: 0.4s;
+}
+@keyframes opa {
+  0% {
+    opacity: 0.1;
+    width: 50%;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+.info {
+  line-height: 10px;
+}
