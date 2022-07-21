@@ -142,3 +142,7 @@ h2 {
 .info {
   line-height: 10px;
 }
+.error{
+    color: red;
+    display: none;
+}

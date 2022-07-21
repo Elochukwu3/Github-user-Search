@@ -9,8 +9,8 @@ const searchBtn = document.querySelector(".btn");
 
 // function
 
-let searchValue = search.value;
 function fetchGit() {
+  let searchValue = search.value;
   info.innerHTML = `seraching for  ${searchValue}`;
   if (show.innerHTML) {
     show.innerHTML = "";
@@ -54,4 +54,10 @@ search.addEventListener("keyup", (event) => {
     fetchGit();
   }
 });
-searchBtn.addEventListener("click", fetchGit)
+searchBtn.addEventListener("click",()=>{
+  if (search.value === "" ) {
+    console.log('hee');
+  } else {
+    fetchGit();
+  }
+})
