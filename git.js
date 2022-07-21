@@ -5,13 +5,15 @@ const info = document.querySelector(".info-text");
 let show = document.querySelector(".display_content");
 const search = document.querySelector(".input-search");
 const searchBtn = document.querySelector(".btn");
+const eror = document.querySelector(".error");
 
 
 // function
 
 function fetchGit() {
+  eror.style.display = "none";
   let searchValue = search.value;
-  info.innerHTML = `seraching for  ${searchValue}`;
+  info.innerHTML = `seraching for  ${searchValue}.....`;
   if (show.innerHTML) {
     show.innerHTML = "";
   }
@@ -56,8 +58,9 @@ search.addEventListener("keyup", (event) => {
 });
 searchBtn.addEventListener("click",()=>{
   if (search.value === "" ) {
-    console.log('hee');
+    eror.style.display = "block"
   } else {
+    
     fetchGit();
   }
 })
