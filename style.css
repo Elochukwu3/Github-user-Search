@@ -46,7 +46,6 @@ h2 {
 .image-holder {
   display: flex;
   justify-content: center;
-  /* margin: 10px 0; */
 }
 .img-container img {
   width: 100%;
